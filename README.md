@@ -5,6 +5,7 @@ Vienkārša "Svelte" lapa priekš ITF 1. kursa ar Shortcut'iem uz svarīgākajā
 # Izstrāde
 
 Vispirms fork'o šo Git repo un:
+
 Installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
