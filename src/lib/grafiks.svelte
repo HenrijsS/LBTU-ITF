@@ -7,6 +7,11 @@
 		case "itia":
 			src =
 				"https://docs.google.com/spreadsheets/d/e/2PACX-1vRcMPXMEfBxZ1X-Uu9batXr_PLluWFCrLJJP77YGE4M4h6uT9imng7wxexvv32UpaUOe4XMQ13HIDkp/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false;chrome=false";
+			break;
+		case "sesija":
+			src =
+				"https://calendar.google.com/calendar/embed?src=rvnv6fm328su3k3b1u1t4e6uk4%40group.calendar.google.com&ctz=Europe%2FRiga";
+			break;
 	}
 </script>
 

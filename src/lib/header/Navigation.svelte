@@ -13,20 +13,20 @@
 			<li class:active={$page.path === "/"}>
 				<a sveltekit:prefetch href="/"> Sākums </a>
 			</li>
-			<li class:active={$page.path === "/Apraksts"}>
+			<li class:active={$page.path === "/sesija"}>
 				<a sveltekit:prefetch href="/sesija">Sesija</a>
 			</li>
-			<li class:active={$page.path === "/Apraksts"}>
+			<li class:active={$page.path === "/itia"}>
 				<a sveltekit:prefetch href="/itia">ITIA</a>
 			</li>
-			<li class:active={$page.path === "/Apraksts"}>
+			<li class:active={$page.path === "/dvdz"}>
 				<a sveltekit:prefetch href="/dvdz">DVDZ</a>
 			</li>
 			<li class:active={$page.path === "/citi-linki"}>
 				<a sveltekit:prefetch href="/citi-linki">Citi linki</a>
 			</li>
-			<li class:active={$page.path === "/Apraksts"}>
-				<a sveltekit:prefetch href="/Apraksts">Apraksts</a>
+			<li class:active={$page.path === "/apraksts"}>
+				<a sveltekit:prefetch href="/apraksts">Apraksts</a>
 			</li>
 		</ul>
 	</nav>
