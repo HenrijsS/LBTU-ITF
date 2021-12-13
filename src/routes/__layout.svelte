@@ -2,7 +2,7 @@
 	import { page } from "$app/stores";
 	import { goto } from "$app/navigation";
 	import { browser } from "$app/env";
-	import Header from "../lib/Header/Navigation.svelte";
+	import Header from "$lib/header/Navigation.svelte";
 	import "../app.scss";
 
 	if (browser) {
