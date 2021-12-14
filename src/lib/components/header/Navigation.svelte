@@ -18,6 +18,11 @@
 			</li>
 			<li class:active={$page.path === "/itia"}>
 				<a sveltekit:prefetch href="/itia">ITIA</a>
+				<ul class="dropdown">
+					<li class:active={$page.path === "/itia/grafiks"}>
+						<a sveltekit:prefetch href="/itia/grafiks">Grafiks</a>
+					</li>
+				</ul>
 			</li>
 			<li class:active={$page.path === "/dvdz"}>
 				<a sveltekit:prefetch href="/dvdz">DVDZ</a>
@@ -38,16 +43,34 @@
 
 <style lang="scss">
 	nav {
-		@apply flex flex-1 justify-center items-center;
+		@apply flex flex-1 h-full justify-center items-center;
 
 		ul {
-			@apply flex;
+			@apply flex h-full;
 
-			li {
-				@apply mx-2;
+			&>li {
+				@apply mx-2 relative h-full flex items-center justify-center;
 
 				a {
-					@apply text-xl;
+					@apply text-xl transition-colors;
+				}
+
+				&.active,
+				&:hover {
+					&>a {
+						color: var(--accent-hover);
+					}
+
+					&>ul.dropdown {
+						transform: scaleY(1);
+					}
+				}
+
+				& > ul.dropdown {
+					@apply absolute top-[100%] z-10 bg-white shadow-2xl rounded-b-xl;
+					transform: scaleY(0);
+					transform-origin: top;
+					transition: 0.4s;
 				}
 			}
 		}

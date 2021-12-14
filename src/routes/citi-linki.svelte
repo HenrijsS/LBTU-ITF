@@ -1,14 +1,10 @@
 <div class="wrapper">
 	<h1>Noderīgi linki vispārējai informācijai</h1>
 
-	<ul>
-		<li><a href="/">Discord</a></li>
-		<li><a href="/">LAIS</a></li>
-		<li><a href="/">LLU ITF</a></li>
-		<li><a href="/">E-Studijas</a></li>
+	<ul class="linkList">
+		<li><a href="https://discord.gg/YjFHSBV5Sp" target="_blank">Discord</a></li>
+		<li><a href="https://lais.llu.lv/pls/pub/!pub_switcher.main?au=G&page=$1" target="_blank">LAIS</a></li>
+		<li><a href="https://itf.llu.lv" target="_blank">LLU ITF</a></li>
+		<li><a href="https://estudijas.llu.lv" target="_blank">E-Studijas</a></li>
 	</ul>
 </div>
-
-<style lang="scss">
-	
-</style>
