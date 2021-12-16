@@ -4,7 +4,7 @@
 
 	let navOpened: boolean = false;
 	let pageLog: string = $page.path;
-	$: if(pageLog !== $page.path) {
+	$: if (pageLog !== $page.path) {
 		pageLog = $page.path;
 		navOpened = false;
 	}
@@ -12,7 +12,7 @@
 
 <header class="flex w-full shadow-lg h-[50px] dark:bg-gray-800">
 	<a href="/">
-		<img src={logo} alt="SvelteKit" class="h-[50px]" />
+		<img src={logo} alt="SvelteKit" class="h-[50px]" height="50" />
 	</a>
 	<nav>
 		<ul class="flex" class:navOpened>

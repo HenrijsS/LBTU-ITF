@@ -2,7 +2,9 @@
 	import { page } from "$app/stores";
 	import { goto } from "$app/navigation";
 	import { browser } from "$app/env";
+
 	import Header from "$lib/components/header/Navigation.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 	import "../app.scss";
 
 	if (browser) {
@@ -24,6 +26,8 @@
 		<slot />
 	</div>
 </main>
+
+<Footer />
 
 <style lang="scss">
 	main {
