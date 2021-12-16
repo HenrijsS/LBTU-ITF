@@ -37,8 +37,8 @@
 			<li class:active={$page.path === "/citi-linki"}>
 				<a sveltekit:prefetch href="/citi-linki">Citi linki</a>
 			</li>
-			<li class:active={$page.path === "/apraksts"}>
-				<a sveltekit:prefetch href="/apraksts">Apraksts</a>
+			<li class:active={$page.path === "/privatuma-politika"}>
+				<a sveltekit:prefetch href="/privatuma-politika">Privātuma politika</a>
 			</li>
 		</ul>
 	</nav>
