@@ -22,8 +22,7 @@
 }
 
 body {
-	min-height: 100vh;
-	margin: 0;
+	@apply m-0 min-h-screen dark:bg-gray-900;
 }
 
 #svelte {
@@ -37,6 +36,7 @@ h2 {
 	font-weight: 400;
 	color: var(--heading-color);
 	margin-top: 15px;
+	@apply dark:text-white;
 }
 
 p {
