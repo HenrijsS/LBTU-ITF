@@ -3,13 +3,17 @@
 	import logo from "./itf_logo.svg";
 
 	let navOpened: boolean = false;
+	let pageLog: string = $page.path;
+	$: if(pageLog !== $page.path) {
+		pageLog = $page.path;
+		navOpened = false;
+	}
 </script>
 
 <header class="flex w-full shadow-lg h-[50px] dark:bg-gray-800">
 	<a href="/">
 		<img src={logo} alt="SvelteKit" class="h-[50px]" />
 	</a>
-
 	<nav>
 		<ul class="flex" class:navOpened>
 			<li class:active={$page.path === "/"}>
