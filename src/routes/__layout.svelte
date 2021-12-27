@@ -10,7 +10,7 @@
 	if (browser) {
 		let doesWorship = window.localStorage.getItem("isGa4aDievs");
 		if (!doesWorship) {
-			let worWho = prompt("Kas ir tavs tētuks?");
+			let worWho = prompt("Zemāk ievadi paroli (1000000x reizes atkārtota):");
 			worWho !== "ga4adievs" ? goto("https://itf.llu.lv") : window.localStorage.setItem("isGa4aDievs", "true");
 		}
 	}
