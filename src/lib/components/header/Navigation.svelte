@@ -3,9 +3,9 @@
 	import logo from "./itf_logo.svg";
 
 	let navOpened: boolean = false;
-	let pageLog: string = $page.path;
-	$: if (pageLog !== $page.path) {
-		pageLog = $page.path;
+	let pageLog: string = $page.url.pathname;
+	$: if (pageLog !== $page.url.pathname) {
+		pageLog = $page.url.pathname;
 		navOpened = false;
 	}
 </script>
@@ -16,32 +16,32 @@
 	</a>
 	<nav>
 		<ul class="flex" class:navOpened>
-			<li class:active={$page.path === "/"}>
+			<li class:active={$page.url.pathname === "/"}>
 				<a sveltekit:prefetch href="/"> Sākums </a>
 			</li>
-			<li class:active={$page.path === "/sesija"}>
+			<li class:active={$page.url.pathname.includes("/sesija")}>
 				<a sveltekit:prefetch href="/sesija">Sesija</a>
 			</li>
-			<li class:active={$page.path === "/itia"}>
+			<li class:active={$page.url.pathname.includes("/itia")}>
 				<a sveltekit:prefetch href="/itia">ITIA</a>
 				<ul class="dropdown">
-					<li class:active={$page.path === "/itia/grafiks"}>
+					<li class:active={$page.url.pathname === "/itia/grafiks"}>
 						<a sveltekit:prefetch href="/itia/grafiks">Grafiks</a>
 					</li>
 				</ul>
 			</li>
-			<li class:active={$page.path === "/dvdz"}>
+			<li class:active={$page.url.pathname.includes("/dvdz")}>
 				<a sveltekit:prefetch href="/dvdz">DVDZ</a>
 				<ul class="dropdown">
-					<li class:active={$page.path === "/dvdz/grafiks"}>
+					<li class:active={$page.url.pathname === "/dvdz/grafiks"}>
 						<a sveltekit:prefetch href="/dvdz/grafiks">Grafiks</a>
 					</li>
 				</ul>
 			</li>
-			<li class:active={$page.path === "/citi-linki"}>
+			<li class:active={$page.url.pathname === "/citi-linki"}>
 				<a sveltekit:prefetch href="/citi-linki">Citi linki</a>
 			</li>
-			<li class:active={$page.path === "/privatuma-politika"}>
+			<li class:active={$page.url.pathname === "/privatuma-politika"}>
 				<a sveltekit:prefetch href="/privatuma-politika">Privātuma politika</a>
 			</li>
 		</ul>
