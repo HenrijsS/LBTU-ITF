@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Citi Linki</title>
+</svelte:head>
+
 <div class="wrapper">
 	<h1>Noderīgi linki vispārējai informācijai</h1>
 

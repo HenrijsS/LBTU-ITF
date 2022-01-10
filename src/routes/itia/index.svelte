@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>ITF - ITIA</title>
+</svelte:head>
+
 <h1>Informācijas Tehnoloģijas Ilgstpējīgai Attīstībai</h1>
 
 <ul class="linkList">

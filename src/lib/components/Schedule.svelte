@@ -13,10 +13,19 @@
 		case "itia":
 			if (grupa == 1) {
 				src =
-					"https://calendar.google.com/calendar/embed?src=mespe73lnfcdt0qdgjanrb2ns4%40group.calendar.google.com&ctz=Europe%2FRiga";
+					"https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FRiga&mode=WEEK&showTz=0&showCalendars=0&showPrint=0&showDate=1&showNav=1&showTitle=0&src=bWVzcGU3M2xuZmNkdDBxZGdqYW5yYjJuczRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4";
 			} else {
 				src =
-					"https://calendar.google.com/calendar/embed?src=jhtsi2r9s9fhgpc0vblh0v5uco%40group.calendar.google.com&ctz=Europe%2FRiga";
+					"https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FRiga&mode=WEEK&showTz=0&showCalendars=0&showPrint=0&showDate=1&showNav=1&showTitle=0&src=amh0c2kycjlzOWZoZ3BjMHZibGgwdjV1Y29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F4511E";
+			}
+			break;
+		case "dvdz":
+			if (grupa == 1) {
+				src =
+					"https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FRiga&mode=WEEK&hl=lv&showTitle=0&showPrint=0&showCalendars=0&showTz=0&src=NWNqaTduc3ZuMXF2aXJmbnJvZGF2aHRvOWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%238E24AA";
+			} else {
+				src =
+					"https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FRiga&mode=WEEK&hl=lv&showTitle=0&showPrint=0&showCalendars=0&showTz=0&src=NDVsN2dtOTJscnFva3MzM2dibGlwbGZlczRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%233F51B5";
 			}
 			break;
 		case "sesija":

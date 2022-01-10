@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Šie rieksti</title>
+</svelte:head>
+
 <iframe
 	src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&autoplay=1"
 	title="Never gonna give you up"

@@ -1,7 +1,13 @@
 <script lang="ts">
 	import Schedule from "$lib/components/Schedule.svelte";
+
+	let grupa: number = 1;
 </script>
 
-<h1>ITIA - Grafiks</h1>
+<svelte:head>
+	<title>ITF - ITIA - Grafiks</title>
+</svelte:head>
 
-<Schedule kurss="itia" />
+<h1>ITIA {grupa}. Grupas - Grafiks</h1>
+
+<Schedule kurss="itia" bind:grupa />
