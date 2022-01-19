@@ -1,3 +1,4 @@
+@use "normalize.scss";
 @import "@fontsource/fira-mono";
 
 @tailwind base;
@@ -59,7 +60,8 @@ h1 {
 }
 
 h2 {
-	font-size: 1rem;
+	font-size: 1.5rem;
+	text-align: center;
 }
 
 pre {

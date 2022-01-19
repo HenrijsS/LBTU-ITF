@@ -19,9 +19,9 @@
 			<li class:active={$page.url.pathname === "/"}>
 				<a sveltekit:prefetch href="/"> Sākums </a>
 			</li>
-			<li class:active={$page.url.pathname.includes("/sesija")}>
+			<!-- <li class:active={$page.url.pathname.includes("/sesija")}>
 				<a sveltekit:prefetch href="/sesija">Sesija</a>
-			</li>
+			</li> -->
 			<li class:active={$page.url.pathname.includes("/itia")}>
 				<a sveltekit:prefetch href="/itia">ITIA</a>
 				<ul class="dropdown">
