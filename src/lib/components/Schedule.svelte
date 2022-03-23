@@ -32,6 +32,10 @@
 			src =
 				"https://calendar.google.com/calendar/embed?src=rvnv6fm328su3k3b1u1t4e6uk4%40group.calendar.google.com&ctz=Europe%2FRiga";
 			break;
+		case "kontroldarbi":
+			src =
+				"https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FRiga&showTitle=0&showTabs=1&showCalendars=0&mode=WEEK&src=cDJzZXVtczVwdDlncWI2YzZwNWw0cHZmaGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D81B60";
+			break;
 	}
 	onMount(() => {
 		iframe.onload = () => (isLoaded = true);
@@ -47,10 +51,12 @@
 	};
 </script>
 
-<div class="groupSelector flex w-full">
-	<div on:click={() => changeGroup(1)} class="groupBtn bg-red-500">1. Grupa</div>
-	<div on:click={() => changeGroup(2)} class="groupBtn bg-green-500">2. Grupa</div>
-</div>
+{#if kurss === "itia" || kurss === "dvdz"}
+	<div class="groupSelector flex w-full">
+		<div on:click={() => changeGroup(1)} class="groupBtn bg-red-500">1. Grupa</div>
+		<div on:click={() => changeGroup(2)} class="groupBtn bg-green-500">2. Grupa</div>
+	</div>
+{/if}
 
 <IframeComp {isLoaded}>
 	<iframe bind:this={iframe} {src} frameborder="0" title={kurss} class="w-full h-full flex-1" />
