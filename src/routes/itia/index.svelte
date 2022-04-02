@@ -6,6 +6,6 @@
 
 <ul class="linkList">
 	<li>
-		<!-- <a sveltekit:prefetch href="/itia/grafiks">Grafiks</a> -->
+		<a sveltekit:prefetch href="/itia/grafiks">Grafiks</a>
 	</li>
 </ul>
