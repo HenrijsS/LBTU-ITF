@@ -13,7 +13,7 @@
 	});
 </script>
 
-<footer class="flex justify-center align-center w-full py-2 dark:text-white">
+<footer class="flex justify-center align-center w-full py-2 dark:text-white text-center">
 	Šodien vārda dienu svin: {vardaDiena}
 </footer>
 

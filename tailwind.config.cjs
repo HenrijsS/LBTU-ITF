@@ -2,10 +2,18 @@ module.exports = {
 	purge: ["src/**/*.svelte"],
 
 	// or 'media' or 'class'
-	darkMode: 'media',
+	darkMode: "media",
 
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				primary: "#f57f32",
+				primarySubtle: "#f58032b4",
+			},
+			shadow: {
+				primary: "10px 10px 48px -13px rgba(245,127,50,1)",
+			},
+		},
 	},
 
 	variants: {
