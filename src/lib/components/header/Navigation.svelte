@@ -1,16 +1,25 @@
 <script lang="ts">
 	import { page } from "$app/stores";
+
+	import MobileNav from "./MobileNav.svelte";
 	import logo from "./itf_logo.svg";
 
 	let navOpened: boolean = false;
+	let hideNav = false;
 	let pageLog: string = $page.url.pathname;
 	$: if (pageLog !== $page.url.pathname) {
 		pageLog = $page.url.pathname;
 		navOpened = false;
 	}
+
+	$: if ($page.url.pathname === "/e-studijas") {
+		hideNav = true;
+	} else {
+		hideNav = false;
+	}
 </script>
 
-<header class="flex w-full shadow-lg h-[50px] dark:bg-gray-800">
+<header class="flex w-full shadow-lg h-[50px] dark:bg-gray-800 sticky z-20 top-0" class:hideNav>
 	<a href="/">
 		<img src={logo} alt="SvelteKit" class="h-[50px]" height="50" />
 	</a>
@@ -50,20 +59,24 @@
 		</ul>
 	</nav>
 
-	<div
-		class="hamburger relative flex flex-col h-full w-[50px] justify-evenly overflow-hidden cursor-pointer"
-		on:click={() => (window.innerWidth <= 768 ? (navOpened = !navOpened) : "")}
-		class:navOpened
-	>
-		<span />
-		<span />
-		<span />
-	</div>
+	<span class="md:hidden text-white font-bold m-auto">LLU-ITF-1</span>
+
+	<div class="h-[50px] w-[50px]" />
 </header>
 
+<MobileNav on:openNav={() => (navOpened = !navOpened)} {navOpened} />
+
 <style lang="scss">
+	header.hideNav {
+		height: 0;
+
+		& > a {
+			display: none;
+		}
+	}
+
 	nav {
-		@apply flex flex-1 h-full justify-center items-center;
+		@apply flex flex-1 h-full justify-center items-center z-10;
 
 		ul {
 			@apply flex h-full;
@@ -102,74 +115,33 @@
 		}
 	}
 
-	.hamburger {
-		opacity: 0;
-		user-select: none;
-
-		@media (max-width: 768px) {
-			opacity: 1;
-			user-select: unset;
-		}
-
-		span {
-			width: 80%;
-			height: 3px;
-			background-color: var(--primary-color);
-			border-radius: 25px;
-			position: absolute;
-			left: 10%;
-			transition: 0.4s;
-
-			&:first-child {
-				top: 10px;
-			}
-
-			&:nth-child(2) {
-				top: 23px;
-			}
-
-			&:nth-child(3) {
-				top: 36px;
-			}
-		}
-
-		&.navOpened {
-			span {
-				&:first-child {
-					transform: rotate(45deg);
-					top: 23px;
-				}
-
-				&:nth-child(2) {
-					transform: translateX(100%);
-					opacity: 0;
-				}
-
-				&:nth-child(3) {
-					transform: rotate(-45deg);
-					top: 23px;
-				}
-			}
-		}
-	}
-
 	@media (max-width: 768px) {
-		nav > ul {
-			@apply absolute top-[50px] pt-10 left-0 w-full h-auto bg-gray-800 z-10 flex-col justify-start;
-			min-height: calc(100vh - 50px);
-			transform: translateX(-100%);
-			transition: 0.4s;
+		nav {
+			flex: 0;
 
-			&.navOpened {
-				transform: translateX(0);
-			}
+			& > ul {
+				@apply absolute top-[50px] pt-10 left-0 w-full h-auto bg-gray-800 z-10 flex-col justify-start;
+				min-height: calc(100vh - 50px);
+				transform: translateX(-100%);
+				transition: 0.4s;
 
-			li {
-				@apply h-auto my-5;
-
-				a {
-					@apply text-2xl;
+				&.navOpened {
+					transform: translateX(0);
 				}
+
+				li {
+					@apply h-auto my-5;
+
+					a {
+						@apply text-2xl;
+					}
+				}
+			}
+		}
+
+		header.hideNav {
+			nav > ul {
+				@apply top-0;
 			}
 		}
 	}

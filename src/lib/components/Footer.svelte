@@ -18,4 +18,9 @@
 </footer>
 
 <style lang="scss">
+	@media (max-width: 768px) {
+		footer {
+			padding-bottom: 70px;
+		}
+	}
 </style>

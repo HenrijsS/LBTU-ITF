@@ -36,6 +36,9 @@
 			src =
 				"https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FRiga&showTitle=0&showTabs=1&showCalendars=0&mode=WEEK&src=cDJzZXVtczVwdDlncWI2YzZwNWw0cHZmaGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D81B60";
 			break;
+		case "e-studijas":
+			src = "https://estudijas.llu.lv";
+			break;
 	}
 	onMount(() => {
 		iframe.onload = () => (isLoaded = true);
