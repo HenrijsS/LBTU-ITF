@@ -59,7 +59,7 @@
 		</ul>
 	</nav>
 
-	<span class="md:hidden text-white font-bold m-auto">LLU-ITF-1</span>
+	<span class="md:hidden text-gray-800 dark:text-white font-bold m-auto">LLU-ITF-1</span>
 
 	<div class="h-[50px] w-[50px]" />
 </header>

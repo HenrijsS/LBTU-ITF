@@ -8,7 +8,7 @@
 
 <div
 	id="mobileNav"
-	class="md:hidden flex flex-col w-full h-[55px] bg-primary fixed left-0 bottom-0 shadow-2xl shadow-white z-30"
+	class="md:hidden flex flex-col w-full h-[55px] fixed left-0 bottom-0 shadow-2xl shadow-primary z-30"
 >
 	<ul class="flex justify-around items-center w-full h-full bg-gray-800">
 		<li>
