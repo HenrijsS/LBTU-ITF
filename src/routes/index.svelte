@@ -9,14 +9,17 @@
 
 <!-- <img class="w-[350px] mx-auto mt-auto px-5" src={ITF_Logo} alt="LLU Informācijas Fakultātes Logotips" width="350" />
 <h1 class="font-bold text-[42px] sm:text-[64px] mx-auto mb-auto text-white px-5">LLU-ITF Īsceļi uz informāciju</h1> -->
+
 <iframe
+	src="https://docs.google.com/forms/d/e/1FAIpQLScW7AIyS5lOJkvuo3Z3lIcBUaLOYtdPCPqi_TS4e6T5SCwSig/viewform?embedded=true"
 	width="100%"
-	height="500"
-	src="https://strawpoll.com/embed/polls/NoZrL833Nn3"
+	height="700"
 	frameborder="0"
-	allowfullscreen
+	marginheight="0"
+	marginwidth="0"
+	scrolling="no"
 	title="Aptauja"
-	class="md:hidden"
+	class="overflow-y-hidden"
 />
 
 <img src="/img/itf_dienas.jpg" alt="ITF Dienas LLU - 2022" class="lg:max-w-[80%] max-w-full mx-auto" />
