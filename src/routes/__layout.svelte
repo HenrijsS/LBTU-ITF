@@ -18,14 +18,13 @@
 
 <Header />
 
-<!-- <main
+<main
 	style="background-image: URL('{$page.url.pathname === '/' ? 'index-bg.jpg' : ''}')"
 	class:relative={$page.url.pathname === "/"}
 >
 	{#if $page.url.pathname === "/"}
 		<div class="overlay" />
-	{/if} -->
-<main>
+	{/if}
 	<div class="z-[1] flex-1 flex flex-col">
 		<slot />
 	</div>
