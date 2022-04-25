@@ -88,7 +88,7 @@
 
 <style lang="scss">
 	#nokartosana {
-		@apply text-white;
+		@apply dark:text-white;
 		list-style: circle;
 
 		& > li {
