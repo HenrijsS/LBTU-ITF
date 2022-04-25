@@ -35,7 +35,7 @@
 				<a sveltekit:prefetch href="/kontroldarbi">Kontroldarbi</a>
 			</li>
 			<li class:active={$page.url.pathname.includes("/itia")}>
-				<a sveltekit:prefetch href="/itia/grafiks">ITIA</a>
+				<a sveltekit:prefetch href="/itia">ITIA</a>
 				<ul class="dropdown">
 					<li class:active={$page.url.pathname === "/itia/grafiks"}>
 						<a sveltekit:prefetch href="/itia/grafiks">Grafiks</a>
@@ -43,7 +43,7 @@
 				</ul>
 			</li>
 			<li class:active={$page.url.pathname.includes("/dvdz")}>
-				<a sveltekit:prefetch href="/dvdz/grafiks">DVDZ</a>
+				<a sveltekit:prefetch href="/dvdz">DVDZ</a>
 				<ul class="dropdown">
 					<li class:active={$page.url.pathname === "/dvdz/grafiks"}>
 						<a sveltekit:prefetch href="/dvdz/grafiks">Grafiks</a>

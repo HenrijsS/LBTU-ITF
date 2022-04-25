@@ -37,13 +37,13 @@
 		</li>
 
 		<li>
-			<a href="/itia/grafiks" sveltekit:prefetch>
+			<a href="/itia" sveltekit:prefetch>
 				<i class="fa-solid fa-laptop-code" />
 				<span>ITIA</span>
 			</a>
 		</li>
 		<li>
-			<a href="/dvdz/grafiks" sveltekit:prefetch
+			<a href="/dvdz" sveltekit:prefetch
 				><i class="fa-solid fa-server" />
 				<span>DVDZ</span>
 			</a>
