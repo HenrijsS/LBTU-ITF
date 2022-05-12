@@ -3,7 +3,7 @@
 	import IframeComp from "$lib/components/iframeComp.svelte";
 
 	let src: string =
-		"https://calendar.google.com/calendar/embed?src=rvnv6fm328su3k3b1u1t4e6uk4%40group.calendar.google.com&ctz=Europe%2FRiga";
+		"https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FRiga&mode=AGENDA&showPrint=0&showTitle=0&hl=lv&src=cnZudjZmbTMyOHN1M2szYjF1MXQ0ZTZ1azRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%238E24AA";
 	let iframe: HTMLIFrameElement;
 	let isLoaded: boolean = false;
 

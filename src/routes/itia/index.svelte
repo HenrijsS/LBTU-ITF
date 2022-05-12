@@ -38,7 +38,7 @@
 			<span class="font-bold">Datu bāzes</span>
 			<ul>
 				<li>Gala darbs 50%</li>
-				<li>2 praktiskais KD un 1 teorijas KD kopā 50%</li>
+				<li>1 Praktiskais KD (25%) un 1 Teorijas KD (25%) kopā 50%</li>
 			</ul>
 		</li>
 		<li>
@@ -69,8 +69,8 @@
 		<li>
 			<span class="font-bold">Programmēšana</span>
 			<ul>
-				<li>Izpildīti visi praktiskie darbi</li>
-				<li>Eksāmens</li>
+				<li>Izpildīti visi praktiskie darbi (40%)</li>
+				<li>Eksāmens (60%)</li>
 			</ul>
 		</li>
 		<li>
