@@ -18,9 +18,9 @@
 			</a>
 		</li>
 		<li>
-			<a href="/kontroldarbi" sveltekit:prefetch
+			<a href="/sesija" sveltekit:prefetch
 				><i class="fa-solid fa-book" />
-				<span>Kontroldarbi</span>
+				<span>Sesija</span>
 			</a>
 		</li>
 
