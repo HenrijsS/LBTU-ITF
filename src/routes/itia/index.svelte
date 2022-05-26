@@ -31,7 +31,7 @@
 		<li>
 			<span class="font-bold">Lietišķa saskarsme</span>
 			<ul>
-				<li>Hzn</li>
+				<li>Katram individuāli E-Studijās (E-Pastā) paziņots</li>
 			</ul>
 		</li>
 		<li>
