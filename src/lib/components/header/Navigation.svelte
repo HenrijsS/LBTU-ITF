@@ -12,11 +12,11 @@
 		navOpened = false;
 	}
 
-	$: if ($page.url.pathname === "/e-studijas") {
-		hideNav = true;
-	} else {
-		hideNav = false;
-	}
+	// $: if ($page.url.pathname === "/e-studijas") {
+	// 	hideNav = true;
+	// } else {
+	// 	hideNav = false;
+	// }
 </script>
 
 <header class="flex w-full shadow-lg h-[50px] bg-white dark:bg-gray-800 sticky z-20 top-0" class:hideNav>
