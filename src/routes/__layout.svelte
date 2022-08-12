@@ -16,10 +16,7 @@
 	}
 </script>
 
-<h1 class="mx-auto mt-auto text-primary font-bold">Izbaudi vasaru!</h1>
-<h2 class="mx-auto mb-auto text-primary font-bold">Domēns mainīsies uz kaut ko citu, lai vieglāk apmeklēt</h2>
-
-<!-- <Header />
+<Header />
 
 <main
 	style="background-image: URL('{$page.url.pathname === '/' ? 'index-bg.jpg' : ''}')"
@@ -33,7 +30,7 @@
 	</div>
 </main>
 
-<Footer /> -->
+<Footer />
 <style lang="scss">
 	main {
 		@apply flex flex-col flex-1 bg-cover bg-center overflow-x-hidden;
