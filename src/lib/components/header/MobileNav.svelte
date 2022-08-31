@@ -19,9 +19,9 @@
 			</a>
 		</li>
 		<li>
-			<a href="/sesija"
-				><i class="fa-solid fa-book" />
-				<span>Sesija</span>
+			<a href="/citi-linki">
+				<i class="fa-solid fa-circle-info" />
+				<span>Citi linki</span>
 			</a>
 		</li>
 
