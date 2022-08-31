@@ -3,7 +3,7 @@
 	"background_color": "#1f2937",
 	"display": "standalone",
 	"start_url": "/",
-	"name": "LBTU-ITF 2. Kursa Shortcuti",
+	"name": "LBTU-ITF 2. Dashboard",
 	"short_name": "LBTU-ITF-2",
 	"icons": [
 		{
