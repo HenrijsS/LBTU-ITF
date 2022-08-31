@@ -7,54 +7,43 @@
 	let navOpened: boolean = false;
 	let hideNav = false;
 	let pageLog: string = $page.url.pathname;
+
 	$: if (pageLog !== $page.url.pathname) {
 		pageLog = $page.url.pathname;
 		navOpened = false;
 	}
-
-	// $: if ($page.url.pathname === "/e-studijas") {
-	// 	hideNav = true;
-	// } else {
-	// 	hideNav = false;
-	// }
 </script>
 
-<header class="flex w-full shadow-lg h-[50px] bg-white dark:bg-gray-800 sticky z-20 top-0" class:hideNav>
+<header class="flex w-full shadow-lg h-[50px] bg-gray-800 sticky z-20 top-0" class:hideNav>
 	<a href="/">
 		<img src={logo} alt="SvelteKit" class="h-[50px]" height="50" />
 	</a>
-	<nav>
+	<nav data-sveltekit-prefetch>
 		<ul class="flex" class:navOpened>
 			<li class:active={$page.url.pathname === "/"}>
-				<a sveltekit:prefetch href="/"> Sākums </a>
+				<a href="/"> Sākums </a>
 			</li>
-			<li class:active={$page.url.pathname.includes("/sesija")}>
-				<a sveltekit:prefetch href="/sesija">Sesija</a>
-			</li>
-			<!-- <li class:active={$page.url.pathname.includes("/kontroldarbi")}>
-				<a sveltekit:prefetch href="/kontroldarbi">Kontroldarbi</a>
-			</li> -->
 			<li class:active={$page.url.pathname.includes("/itia")}>
-				<a sveltekit:prefetch href="/itia">ITIA</a>
+				<a href="/itia">ITIA</a>
 				<ul class="dropdown">
 					<li class:active={$page.url.pathname === "/itia/grafiks"}>
-						<a sveltekit:prefetch href="/itia/grafiks">Grafiks</a>
+						<a href="/itia/grafiks">Grafiks</a>
 					</li>
 				</ul>
 			</li>
 			<li class:active={$page.url.pathname.includes("/dvdz")}>
-				<a sveltekit:prefetch href="/dvdz">DVDZ</a>
+				<a href="/dvdz">DVDZ</a>
 				<ul class="dropdown">
 					<li class:active={$page.url.pathname === "/dvdz/grafiks"}>
-						<a sveltekit:prefetch href="/dvdz/grafiks">Grafiks</a>
+						<a href="/dvdz/grafiks">Grafiks</a>
 					</li>
 				</ul>
 			</li>
 			<li class:active={$page.url.pathname === "/citi-linki"}>
-				<a sveltekit:prefetch href="/citi-linki">Citi linki</a>
+				<a href="/citi-linki">Citi linki</a>
 			</li>
 			<li class:active={$page.url.pathname === "/privatuma-politika"}>
-				<a sveltekit:prefetch href="/privatuma-politika">Privātuma politika</a>
+				<a href="/privatuma-politika">Privātuma politika</a>
 			</li>
 		</ul>
 	</nav>

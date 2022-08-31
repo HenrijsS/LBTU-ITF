@@ -37,6 +37,7 @@
 				"https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FRiga&showTitle=0&showTabs=1&showCalendars=0&mode=WEEK&src=cDJzZXVtczVwdDlncWI2YzZwNWw0cHZmaGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D81B60";
 			break;
 	}
+
 	onMount(() => {
 		iframe.onload = () => (isLoaded = true);
 	});
@@ -52,9 +53,9 @@
 </script>
 
 {#if kurss === "itia" || kurss === "dvdz"}
-	<div class="groupSelector flex w-full">
-		<div on:click={() => changeGroup(1)} class="groupBtn" class:active={grupa === 1}>1. Grupa</div>
-		<div on:click={() => changeGroup(2)} class="groupBtn" class:active={grupa === 2}>2. Grupa</div>
+	<div class="groupSelector flex justify-center  w-full">
+		<div on:click={() => changeGroup(1)}  class="groupBtn btn btn-lg {grupa === 1 ? 'btn-primary' : 'btn-error btn-outline'}">1. Grupa</div>
+		<div on:click={() => changeGroup(2)}  class="groupBtn btn btn-lg {grupa === 2 ? 'btn-primary' : 'btn-error btn-outline'}">2. Grupa</div>
 	</div>
 {/if}
 
@@ -65,15 +66,7 @@
 <style lang="scss">
 	.groupSelector {
 		.groupBtn {
-			@apply flex flex-1 justify-center items-center cursor-pointer py-2 transition duration-200 text-white bg-red-700;
-
-			&:hover {
-				@apply shadow-xl bg-green-600;
-			}
-
-			&.active {
-				@apply bg-green-500;
-			}
+			@apply flex justify-center items-center m-4;
 		}
 	}
 </style>

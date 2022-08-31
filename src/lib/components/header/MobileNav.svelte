@@ -9,16 +9,17 @@
 <div
 	id="mobileNav"
 	class="md:hidden flex flex-col w-full h-[55px] fixed left-0 bottom-0 shadow-2xl shadow-primary z-30"
+	data-sveltekit-prefetch
 >
 	<ul class="flex justify-around items-center w-full h-full bg-gray-800">
 		<li>
-			<a href="/" sveltekit:prefetch>
+			<a href="/">
 				<i class="fa-solid fa-house" />
 				<span>Sākums</span>
 			</a>
 		</li>
 		<li>
-			<a href="/sesija" sveltekit:prefetch
+			<a href="/sesija"
 				><i class="fa-solid fa-book" />
 				<span>Sesija</span>
 			</a>
@@ -37,13 +38,13 @@
 		</li>
 
 		<li>
-			<a href="/itia" sveltekit:prefetch>
+			<a href="/itia">
 				<i class="fa-solid fa-laptop-code" />
 				<span>ITIA</span>
 			</a>
 		</li>
 		<li>
-			<a href="/dvdz" sveltekit:prefetch
+			<a href="/dvdz"
 				><i class="fa-solid fa-server" />
 				<span>DVDZ</span>
 			</a>

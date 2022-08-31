@@ -3,8 +3,8 @@
 	"background_color": "#1f2937",
 	"display": "standalone",
 	"start_url": "/",
-	"name": "LLU-ITF 1. Kursa Shortcuti",
-	"short_name": "LLU-ITF-1",
+	"name": "LBTU-ITF 2. Kursa Shortcuti",
+	"short_name": "LBTU-ITF-2",
 	"icons": [
 		{
 			"src": "/icon-128x128.png",
