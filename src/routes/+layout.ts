@@ -12,4 +12,10 @@ export function load() {
 			worWho !== "ga4adievs" ? goto("https://itf.llu.lv") : window.localStorage.setItem("isGa4aDievs", "true");
 		}
 	}
+
+	return {
+		props: {
+			URL,
+		},
+	};
 }

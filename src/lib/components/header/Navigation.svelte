@@ -25,11 +25,11 @@
 			</li>
 			<li class:active={$page.url.pathname.includes("/itia")}>
 				<a href="/itia">ITIA</a>
-				<ul class="dropdown">
+				<!-- <ul class="dropdown">
 					<li class:active={$page.url.pathname === "/itia/grafiks"}>
 						<a href="/itia/grafiks">Grafiks</a>
 					</li>
-				</ul>
+				</ul> -->
 			</li>
 			<li class:active={$page.url.pathname.includes("/dvdz")}>
 				<a href="/dvdz">DVDZ</a>
